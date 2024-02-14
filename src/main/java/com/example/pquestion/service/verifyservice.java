@@ -11,8 +11,15 @@ public class verifyservice {
     verifydao verifydao;
     public String add(verify verify) {
         verifydao.save(verify);
+
         return "success";
 
 
     }
+    public String done(String user1){
+        return verifydao.done(user1);
+
+
+    }
+
 }
